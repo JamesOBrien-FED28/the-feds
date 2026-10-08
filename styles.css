@@ -1,138 +1,209 @@
 @font-face {
     font-family: Montserrat;
     src: url(./fonts/Montserrat.ttf);
+    /*[cite: 16] */
 }
 
 :root {
     /* Base Background Gradient */
     --bg-gradient-midnight: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #1f2937 100%);
+    /*[cite: 16] */
 
     /* Accent & Glow Colors */
     --accent-glow-secondary: #8b5cf6;
+    /*[cite: 16] */
 
     /* Glassmorphism Surface Tokens */
     --glass-border-default: rgba(255, 255, 255, 0.12);
+    /*[cite: 16] */
     --glass-border-highlight: rgba(255, 255, 255, 0.20);
+    /*[cite: 16] */
     --glass-blur-md: blur(16px);
+    /*[cite: 16] */
     --glass-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+    /*[cite: 16] */
 
     /* Text & Typography Colors */
     --text-primary: #f9fafb;
+    /*[cite: 16] */
     --text-secondary: #9ca3af;
+    /*[cite: 16] */
     --text-tertiary: #6b7280;
+    /*[cite: 16] */
 }
 
-/* Page Base */
+/* Page Base - Inherits Montserrat globally */
 body {
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
     background-image: var(--bg-gradient-midnight);
+    /*[cite: 16] */
     color: var(--text-primary);
+    /*[cite: 16] */
     min-height: 100vh;
+    /*[cite: 16] */
     margin: 0;
+    /*[cite: 16] */
 }
 
 /* Header Section */
 header {
     display: flex;
+    /*[cite: 16] */
     background-image: url(./images/header.avif);
+    /*[cite: 16] */
     background-position: bottom;
+    /*[cite: 16] */
     margin: 0;
+    /*[cite: 16] */
     height: 15vh;
+    /*[cite: 16] */
     align-content: center;
+    /*[cite: 16] */
 }
 
 header h1 {
     display: inline;
+    /*[cite: 16] */
     align-self: center;
-    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    /*[cite: 16] */
     text-shadow: 0 2px 4px #0d1117;
+    /*[cite: 16] */
 }
 
 /* Hero Section */
 .hero {
-    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    /*[cite: 16] */
     margin-top: 3%;
+    /*[cite: 16] */
 }
 
 h2 {
     font-size: xx-large;
+    /*[cite: 16] */
     color: var(--text-primary);
+    /*[cite: 16] */
 }
 
 p {
     font-size: medium;
+    /*[cite: 16] */
     color: var(--accent-glow-secondary);
+    /*[cite: 16] */
 }
 
 /* Card Grid Layout */
 .flex-container {
     display: grid;
+    /*[cite: 16] */
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    /*[cite: 16] */
     gap: 1.5rem;
+    /*[cite: 16] */
     padding-left: 10%;
+    /*[cite: 16] */
     padding-right: 10%;
+    /*[cite: 16] */
     padding-top: 3%;
+    /*[cite: 16] */
 }
 
 /* Card Link Container */
 .glass-card-link {
     text-decoration: none;
+    /*[cite: 16] */
     color: inherit;
+    /*[cite: 16] */
     display: block;
+    /*[cite: 16] */
     width: 100%;
+    /*[cite: 16] */
 }
 
 /* Glassmorphism Card */
 .glass-card {
-    background-image: linear-gradient(180deg, rgba(13, 17, 23, 0.2) 0%, rgba(13, 17, 23, 0.85) 100%),
+    background-image: linear-gradient(180deg, rgba(13, 17, 23, 0.1) 0%, rgba(13, 17, 23, 0.9) 100%),
         var(--card-bg, url('./images/default-avatar.png'));
+    /*[cite: 16] */
     background-size: cover;
+    /*[cite: 16] */
     background-position: center;
+    /*[cite: 16] */
     background-repeat: no-repeat;
+    /*[cite: 16] */
     border: 1px solid var(--glass-border-default);
+    /*[cite: 16] */
     backdrop-filter: var(--glass-blur-md);
+    /*[cite: 16] */
     -webkit-backdrop-filter: var(--glass-blur-md);
-    box-shadow: var(--glass-shadow);
+    /*[cite: 16] */
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.8), 0 8px 10px -6px rgba(0, 0, 0, 0.6);
+    /*[cite: 16] */
     border-radius: 0.5rem;
-    transition: all 0.3s ease;
+    /*[cite: 16] */
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    /*[cite: 16] */
     width: 100%;
+    /*[cite: 16] */
     height: 25vh;
+    /*[cite: 16] */
     padding: 1rem 0.5rem;
+    /*[cite: 16] */
     box-sizing: border-box;
+    /*[cite: 16] */
     display: flex;
+    /*[cite: 16] */
     flex-direction: column;
+    /*[cite: 16] */
     align-items: center;
+    /*[cite: 16] */
     justify-content: flex-end;
-    overflow: hidden;
+    /*[cite: 16] */
 }
 
 .glass-card:hover {
     transform: translateY(-6px);
+    /*[cite: 16] */
     border-color: var(--glass-border-highlight);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
-}
-
-.glass-card p {
-    color: var(--text-secondary);
+    /*[cite: 16] */
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.9), 0 0 15px rgba(255, 255, 255, 0.1);
+    /*[cite: 16] */
 }
 
 .card-name {
     margin: 0;
+    /*[cite: 16] */
     font-weight: 600;
-    color: var(--text-primary);
+    /*[cite: 16] */
+    color: #ffffff;
+    /*[cite: 16] */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 0 8px rgba(0, 0, 0, 0.9);
+    /*[cite: 16] */
 }
 
 .card-role {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
+    font-size: 0.8rem;
+    /*[cite: 16] */
+    color: #ffffff;
+    /*[cite: 16] */
     margin-top: 0.25rem;
+    /*[cite: 16] */
+    display: block;
+    /*[cite: 16] */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 0 8px rgba(0, 0, 0, 0.9);
+    /*[cite: 16] */
 }
 
 /* Footer Section */
 .foot-text {
     color: var(--text-tertiary);
+    /*[cite: 16] */
     font-size: smaller;
+    /*[cite: 16] */
     text-align: center;
+    /*[cite: 16] */
     margin-top: 3%;
+    /*[cite: 16] */
     margin-bottom: 1.5%;
+    /*[cite: 16] */
 }
