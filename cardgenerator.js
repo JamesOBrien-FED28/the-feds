@@ -1,5 +1,6 @@
 // 1. Array storing student data objects with realistic temporary portrait images
 const students = [
+    { name: "Adam", image: "https://i.pravatar.cc/300?img=67", profileUrl: "./profiles/adam.html", role: "Frontend Dev" },
     { name: "Alex", image: "https://i.pravatar.cc/300?img=11", profileUrl: "./profiles/alex.html", role: "Frontend Dev" },
     { name: "Alma", image: "https://i.pravatar.cc/300?img=5", profileUrl: "./profiles/alma.html", role: "UI/UX Designer" },
     { name: "Amanda", image: "https://i.pravatar.cc/300?img=9", profileUrl: "./profiles/amanda.html", role: "Fullstack Dev" },
@@ -16,9 +17,13 @@ const students = [
     { name: "James", image: "https://i.pravatar.cc/300?img=15", profileUrl: "./profiles/james.html", role: "Fullstack Dev" },
     { name: "Dina", image: "https://i.pravatar.cc/300?img=44", profileUrl: "./profiles/dina.html", role: "UI/UX Designer" },
     { name: "Mahdi", image: "https://i.pravatar.cc/300?img=33", profileUrl: "./profiles/mahdi.html", role: "Python Developer" },
+    { name: "Oksana", image: "https://i.pravatar.cc/300?img=69", profileUrl: "./profiles/oksana.html", role: "Frontend Dev" },
     { name: "Rita", image: "https://i.pravatar.cc/300?img=47", profileUrl: "./profiles/rita.html", role: "React Developer" },
+    { name: "Ruby", image: "https://i.pravatar.cc/300?img=3", profileUrl: "./profiles/ruby.html", role: "Frontend Dev" },
+    { name: "Parisa", image: "https://i.pravatar.cc/300?img=22", profileUrl: "./profiles/parisa.html", role: "Frontend Dev" },
     { name: "Masal", image: "https://i.pravatar.cc/300?img=21", profileUrl: "./profiles/masal.html", role: "Frontend Dev" },
     { name: "Abdullah", image: "https://i.pravatar.cc/300?img=56", profileUrl: "./profiles/abdullah.html", role: "Backend Dev" },
+    { name: "Sara", image: "https://i.pravatar.cc/300?img=66", profileUrl: "./profiles/sara.html", role: "Frontend Dev" },
     { name: "Shazma", image: "https://i.pravatar.cc/300?img=49", profileUrl: "./profiles/shazma.html", role: "Fullstack Dev" },
     { name: "Taiane", image: "https://i.pravatar.cc/300?img=38", profileUrl: "./profiles/taiane.html", role: "UI/UX Designer" }
 ];
